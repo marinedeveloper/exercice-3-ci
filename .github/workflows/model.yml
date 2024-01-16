@@ -1,0 +1,31 @@
+name: Test Model
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - labeled
+      - synchronize
+
+jobs:
+  calculator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v2
+
+      - name: "Install PHP with extensions"
+        uses: shivammathur/setup-php@v2
+        with:
+          coverage: "xdebug"
+          extensions: "intl, mbstring, pdo_sqlite, zip"
+          php-version: 8.2
+          tools: composer:v2
+
+      - name: "Install dependencies"
+        run: composer install --ansi --no-interaction --no-progress
+
+      - name: Run Test Model
+        run: vendor/bin/phpunit
