@@ -1,0 +1,34 @@
+users:
+  -
+    username: "joe"
+    createdAt: 2015-04-24 17:15:23
+  -
+    username: "Jhon"
+    createdAt: 2015-04-26 12:14:20
+  -
+    username: "Sophie"
+    createdAt: 2021-04-26 12:14:20
+  -
+    username: "Bernard"
+    createdAt: 2017-04-26 12:14:20
+  -
+    username: "Phil"
+    createdAt: 2011-04-26 12:14:20
+  -
+    username: "Chritoph"
+    createdAt: 2010-04-26 12:14:20
+  -
+    username: "Alan"
+    createdAt: 2019-04-26 12:14:20
+  -
+    username: "Jhon"
+    createdAt: 2021-04-26 12:14:20
+  -
+    username: "Evan"
+    createdAt: 2020-04-26 12:14:20
+  -
+    username: "Stef"
+    createdAt: 2001-04-26 12:14:20
+  -
+    username: "Jodie"
+    createdAt: 2000-04-26 12:14:20
