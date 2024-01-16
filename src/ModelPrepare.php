@@ -36,18 +36,14 @@ class ModelPrepare
         return $stmt->fetchAll(\PDO::FETCH_CLASS, 'App\\User');
     }
 
-    /**
-     * Return all resources
-     *
-     * @return array resources
-     */
+
     public function update(User $user)
     {
         $query = 'UPDATE user SET username=:username WHERE id=:id';
         $stmt = $this->pdo->prepare($query); // compilée
         $stmt->execute([':id' => $user->id, ':username' => $user->username]);
 
-       // return $stmt->setFetchMode(\PDO::FETCH_CLASS, 'App\\User');
+//        return $stmt->setFetchMode(\PDO::FETCH_CLASS, 'App\\User');
     }
 
     /**
